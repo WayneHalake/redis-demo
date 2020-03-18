@@ -1,0 +1,15 @@
+server:
+  port: 8098
+
+# DataSource Config
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.3.25:3306/abs?useUnicode=true&useSSL=false&characterEncoding=utf8
+    username: root
+    password: 123456
+
+# Logger Config
+logging:
+  level:
+    com.example.demo.mapper: debug
