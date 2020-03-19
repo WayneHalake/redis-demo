@@ -8,8 +8,17 @@ spring:
     url: jdbc:mysql://192.168.3.25:3306/abs?useUnicode=true&useSSL=false&characterEncoding=utf8
     username: root
     password: 123456
-
+  # redis config
+  redis:
+    host: 172.17.0.2
+    post: 6479
+    password:
+    jedis:
+      pool:
+        max-active: 8
 # Logger Config
 logging:
   level:
     com.example.demo.mapper: debug
+
+
