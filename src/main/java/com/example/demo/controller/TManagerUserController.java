@@ -30,8 +30,10 @@ public class TManagerUserController {
 
     @GetMapping("/selectUserById")
     public void selectManagerUser(String id){
-        TManagerUser managerUser = managerUserService.getById(id);
-
+        long start = System.currentTimeMillis();
+        TManagerUser managerUser = managerUserService.getManagerUserById(id);
+        long end = System.currentTimeMillis();
+        logger.info("time:{}", end - start);
         logger.info("managerUser: {}", managerUser.toString());
     }
 }

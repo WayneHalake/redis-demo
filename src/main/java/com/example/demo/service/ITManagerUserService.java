@@ -13,4 +13,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface ITManagerUserService extends IService<TManagerUser> {
 
+    TManagerUser getManagerUserById(String id);
+
+
 }
