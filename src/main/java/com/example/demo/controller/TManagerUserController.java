@@ -36,4 +36,5 @@ public class TManagerUserController {
         logger.info("time:{}", end - start);
         logger.info("managerUser: {}", managerUser.toString());
     }
+
 }
